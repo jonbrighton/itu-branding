@@ -135,9 +135,10 @@ DEMI</h3>
   </section>
   <!-- #fonts -->
 
-  <footer>
+  <footer class="disclaimer">
     <p>The following Branding Guidlines website is for Training purposes Only.<br>
     For all actual branding guidelines of the ITU long distance triathlons please refer to ITU branding Guidelines</p>
+    <a class="close" href="#">Close</a>
   </footer>
   <script src="responsive-nav.min.js"></script>
   <script>
@@ -145,6 +146,13 @@ DEMI</h3>
       transition: 400,
       insert: 'after'
     });
+
+    var disclaimer = document.querySelector('.disclaimer')
+    var close = document.querySelector('.close')
+
+    close.addEventListener('click', function () {
+      disclaimer.style.cssText = 'transition:1s; opacity:0;'
+    })
   </script>
 </body>
 

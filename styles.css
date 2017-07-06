@@ -252,6 +252,18 @@ a:hover {
     top: 0;
     left: 0;
 }
+
+.close {
+  width:32px;
+  height:32px;
+  display: block;
+  text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+  background: url(images/close.svg);
+  margin-left:6%;
+}
+
 .nav-toggle.active::before {
     font-size: 32px;
     content: "x";
@@ -577,6 +589,9 @@ footer {
     background: #003366;
     height: 200px;
     width: 100%;
+    position:fixed;
+    bottom:0;
+    width:100%;
 }
 footer p {
     text-align: center;
