@@ -85,7 +85,7 @@ a:hover {
 }
 .second-blank {
     padding: .1em;
-    height: 100vh;
+    min-height: 100vh;
     background: #ffffff;
     /*display:flex;*/
 }
@@ -147,14 +147,21 @@ a:hover {
 
 
 /*! responsive-nav.js 1.0.39 by @viljamis */
+.top {
+  position:fixed;
+  top:0;
+  width:100%;
+}
 
 .nav-collapse ul {
+    /*background:white;*/
     margin: 0;
     padding: 0;
     width: 100%;
     display: block;
     list-style: none;
     border-top: 1px solid white;
+
 }
 .nav-collapse li {
     width: 100%;
@@ -200,6 +207,7 @@ a:hover {
     white-space: nowrap;
     overflow: hidden;
     margin-right: 6%;
+    z-index:120;
 }
 @font-face {
     font-family: "responsivenav";
