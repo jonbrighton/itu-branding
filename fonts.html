@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <header>
+
+
+  </header>
+  <div class="top">
+    <nav class="nav-collapse">
+      <ul>
+        <li>ITU Branding Guidelines</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="color.html">Colors</a></li>
+        <li><a href="fonts.html">Fonts</a></li>
+        <li><a href="logo.html">Logo</a></li>
+      </ul>
+    </nav>
+    <div class="parallax">
+
+      <img class="logo" src="images/itu-logo.png" alt="itu logo">
+      <div class="box"></div>
+    </div>
+  </div> <!-- .top -->
+  <div class="blank">
+    <div class="container">
+      <h1>ITU Branding Guidelines</h1>
+      <h2>Long Distance Triathlon</h2>
+      <p>Using the triathlon principle of swim-bike-run, long distance events are usually held over double or triple the length of the standard distance. Athletes require high levels of stamina and endurance as races for the elites can last up to seven hours.
+        One major difference between standard and long distance events is that elite athletes are not allowed to draft on the bike. As such, many athletes who participate in long distance triathlon have a strong cycling background.
+
+      </p>
+    </div>
+  </div>
+
+  <div class="video-container">
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/znlgoiEP8RM?start=1&end=10&loop=1&playlist=znlgoiEP8RM&version3&autoplay=1&showinfo=0&controls=0&modestbranding=1" frameborder="0" allowfullscreen=""></iframe>
+
+    </div>
+  </div>
+
+  <div class="blank second-blank">
+    <h2>Upcoming Events</h2>
+    <div id="getting-started"></div>
+
+  </div>
+
+  <div class="overlay2">
+    <div class="container">
+      All about the logo
+    </div>
+    <!-- .container -->
+  </div>
+  <!-- .overlay2 -->
+  <footer>
+    <small><a href="https://opensource.org/licenses/MIT">MIT</a></small>
+  </footer>
+</body>
+<script src="responsive-nav.min.js"></script>
+  <script>
+    var navigation = responsiveNav(".nav-collapse", {
+      transition: 400,
+      insert: 'after'
+    });
+  </script>
+</html>
