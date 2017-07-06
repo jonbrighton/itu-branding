@@ -43,8 +43,7 @@
       </div>
       <!-- parallax -->
 
-      </div>
-      <!-- top -->
+
   </section><!-- opening -->
   <section id="history">
     <div class="blank">
@@ -61,7 +60,7 @@
   <!-- history -->
   <div class="video-container">
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/znlgoiEP8RM?start=1&end=10&loop=1&playlist=znlgoiEP8RM&version3&autoplay=1&showinfo=0&controls=0&modestbranding=1" frameborder="0" allowfullscreen=""></iframe>
+      <iframe src="https://www.youtube.com/embed/znlgoiEP8RM?start=1&end=10&loop=1&playlist=znlgoiEP8RM&version3&autoplay=1&showinfo=0&controls=0&modestbranding=1"  allowfullscreen=""></iframe>
 
     </div>
   </div>
@@ -140,13 +139,14 @@ DEMI</h3>
     <p>The following Branding Guidlines website is for Training purposes Only.<br>
     For all actual branding guidelines of the ITU long distance triathlons please refer to ITU branding Guidelines</p>
   </footer>
+  <script src="responsive-nav.min.js"></script>
+  <script>
+    var navigation = responsiveNav(".nav-collapse", {
+      transition: 400,
+      insert: 'after'
+    });
+  </script>
 </body>
-<script src="responsive-nav.min.js"></script>
-<script>
-  var navigation = responsiveNav(".nav-collapse", {
-    transition: 400,
-    insert: 'after'
-  });
-</script>
+
 
 </html>
